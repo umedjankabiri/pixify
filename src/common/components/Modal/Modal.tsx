@@ -1,23 +1,21 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import stl from "common/components/Modal/Modal.module.css";
 
 type Props = {
   open: boolean;
+  modalTitle: string;
   onClose?: () => void;
+  children?: ReactNode;
 };
-export const Modal: FC<Props> = ({ open, onClose }) => {
+export const Modal: FC<Props> = ({ open, modalTitle, children, onClose }) => {
   return (
     <>
       {open && (
         <div className={stl.overlay}>
           <div className={stl.content}>
-            <h3 className={stl.title}>Cart</h3>
+            <h3 className={stl.title}>{modalTitle}</h3>
             <hr />
-            <ul>
-              <li>1 товар</li>
-              <li>2 товар</li>
-              <li>3 товар</li>
-            </ul>
+            {children}
             <button className={stl.closeIcon} onClick={onClose}>
               x
             </button>
