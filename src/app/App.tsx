@@ -1,10 +1,10 @@
 import "app/App.css";
-import { Card } from "common/components/Card/Card.tsx";
+import { Header } from "common/components/Header/Header.tsx";
 
 function App() {
   return (
     <>
-      <Card />
+      <Header />
     </>
   );
 }
