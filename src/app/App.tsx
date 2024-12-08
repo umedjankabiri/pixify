@@ -1,10 +1,10 @@
 import "app/App.css";
-import { Modal } from "common/components/Modal/Modal.tsx";
+import { Card } from "common/components/Card/Card.tsx";
 
 function App() {
   return (
     <>
-      <Modal open={true} />
+      <Card />
     </>
   );
 }
