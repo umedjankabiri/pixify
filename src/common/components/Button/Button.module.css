@@ -5,6 +5,7 @@
     color: var(--light-100);
     font-family: inherit;
     padding: 5px;
+    margin-top: 10px;
     min-width: 100px;
     text-align: center;
 }
