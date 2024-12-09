@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import stl from "./Post.module.css";
 import { DeletePostModal } from "common/components/DeletePostModal/DeletePostModal.tsx";
+import { Button } from "common/components/Button/Button.tsx";
 
 export const Post: FC = () => {
   const [posts, _setPosts] = useState([
@@ -17,7 +18,7 @@ export const Post: FC = () => {
     return (
       <div key={post.id} className={stl.postContainer}>
         <h3>{post.title}</h3>
-        <button onClick={openModalHandler}>x</button>
+        <Button onClick={openModalHandler}>x</Button>
       </div>
     );
   });
