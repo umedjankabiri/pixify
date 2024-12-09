@@ -1,6 +1,6 @@
-import { FC } from "react";
-import { ButtonProps } from "common/types/ButtonProps/ButtonProps.ts";
+import { forwardRef } from "react";
+import { ButtonProps, ButtonRef } from "common/types/ButtonProps/ButtonProps.ts";
 
-export const Button: FC<ButtonProps> = ({ ...restProps }) => {
-  return <button {...restProps} />;
-};
+export const Button = forwardRef<ButtonRef, ButtonProps>(({ ...restProps }, ref) => {
+  return <button ref={ref} {...restProps} />;
+});
