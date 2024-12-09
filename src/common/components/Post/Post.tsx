@@ -24,7 +24,10 @@ export const Post: FC = () => {
 
   return (
     <>
-      {mappedPosts}
+      <div className={stl.container}>
+        <h2>Posts</h2>
+        {mappedPosts}
+      </div>
       <DeletePostModal open={showModal} onClose={closeModalHandler} />
     </>
   );
