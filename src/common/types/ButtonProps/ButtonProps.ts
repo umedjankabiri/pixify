@@ -1,10 +1,3 @@
-import { ReactNode } from "react";
+import { ComponentProps } from "react";
 
-export type ButtonProps = {
-  children: ReactNode;
-  onClick?: () => void;
-  title?: string;
-  className?: string;
-  disabled?: boolean;
-  type?: "button" | "submit" | "reset";
-};
+export type ButtonProps = ComponentProps<"button">;
