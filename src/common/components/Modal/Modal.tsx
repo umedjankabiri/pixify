@@ -8,6 +8,7 @@ type Props = {
   onClose?: () => void;
   children?: ReactNode;
 };
+
 export const Modal: FC<Props> = ({ open, modalTitle, children, onClose }) => {
   return (
     <>
