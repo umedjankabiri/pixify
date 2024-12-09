@@ -1,4 +1,5 @@
-import { ComponentProps } from "react";
+import { ComponentPropsWithoutRef } from "react";
 
-export type ButtonProps = ComponentProps<"button">;
-export type ButtonRef = HTMLButtonElement;
+export type ButtonProps = {
+  variant?: "primary" | "secondary" | "outlined";
+} & ComponentPropsWithoutRef<"button">;
