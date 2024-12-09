@@ -18,7 +18,9 @@ export const Post: FC = () => {
     return (
       <div key={post.id} className={stl.postContainer}>
         <h3>{post.title}</h3>
-        <Button onClick={openModalHandler}>x</Button>
+        <Button variant={"outlined"} onClick={openModalHandler}>
+          x
+        </Button>
       </div>
     );
   });
