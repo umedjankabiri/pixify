@@ -9,7 +9,9 @@ export const DeletePostModal: FC<DeletePostModalProps> = ({ open, onClose }) => 
       Are you sure you want to delete this post?
       <div>
         <Button onClick={onClose}>Yes</Button>
-        <Button onClick={onClose}>No</Button>
+        <Button variant={"outlined"} onClick={onClose}>
+          No
+        </Button>
       </div>
     </ModalRadix>
   );
