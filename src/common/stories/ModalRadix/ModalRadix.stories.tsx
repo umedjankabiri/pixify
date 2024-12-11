@@ -22,7 +22,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const BaseModal: Story = {
+export const ModalSmallSize: Story = {
   render: (args) => {
     const [isOpen, setIsOpen] = useState(args.open);
     const handleClose = () => {
@@ -36,7 +36,7 @@ export const BaseModal: Story = {
     open: true,
     onClose: action("onClose"),
     title: "Modal title",
-    size: "medium",
+    size: "small",
     children: (
       <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur assumenda consequatur cumque ea fugiat
