@@ -25,3 +25,18 @@ export const Primary: Story = {
     asChild: false,
   },
 };
+export const Secondary: Story = {
+  argTypes: {
+    variant: {
+      control: {
+        type: "radio",
+      },
+      options: ["primary", "secondary", "outlined"],
+    },
+  },
+  args: {
+    variant: "secondary",
+    children: "Secondary Button",
+    asChild: false,
+  },
+};
