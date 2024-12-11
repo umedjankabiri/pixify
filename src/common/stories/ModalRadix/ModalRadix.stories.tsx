@@ -1,10 +1,9 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { ModalRadix } from "common/components/ModalRadix/ModalRadix.tsx";
 import { action } from "@storybook/addon-actions";
-import { useState } from "react";
 
 const meta = {
-  title: "ModalRadix",
+  title: "ModalRadix component",
   component: ModalRadix,
   tags: ["autodocs"],
   argTypes: {
@@ -17,21 +16,17 @@ const meta = {
     },
     children: { control: "text" },
   },
+  parameters: {
+    docs: {
+      disable: true,
+    },
+  },
 } satisfies Meta<typeof ModalRadix>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const ModalSmallSize: Story = {
-  render: (args) => {
-    const [isOpen, setIsOpen] = useState(args.open);
-    const handleClose = () => {
-      setIsOpen(false);
-      action("onClose")();
-    };
-
-    return <ModalRadix {...args} open={isOpen} onClose={handleClose} />;
-  },
   args: {
     open: true,
     onClose: action("onClose"),
@@ -46,15 +41,6 @@ export const ModalSmallSize: Story = {
   },
 };
 export const ModalMediumSize: Story = {
-  render: (args) => {
-    const [isOpen, setIsOpen] = useState(args.open);
-    const handleClose = () => {
-      setIsOpen(false);
-      action("onClose")();
-    };
-
-    return <ModalRadix {...args} open={isOpen} onClose={handleClose} />;
-  },
   args: {
     open: true,
     onClose: action("onClose"),
@@ -69,15 +55,6 @@ export const ModalMediumSize: Story = {
   },
 };
 export const ModalLargeSize: Story = {
-  render: (args) => {
-    const [isOpen, setIsOpen] = useState(args.open);
-    const handleClose = () => {
-      setIsOpen(false);
-      action("onClose")();
-    };
-
-    return <ModalRadix {...args} open={isOpen} onClose={handleClose} />;
-  },
   args: {
     open: true,
     onClose: action("onClose"),
