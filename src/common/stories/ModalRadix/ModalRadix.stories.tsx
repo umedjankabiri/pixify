@@ -45,3 +45,26 @@ export const ModalSmallSize: Story = {
     ),
   },
 };
+export const ModalMediumSize: Story = {
+  render: (args) => {
+    const [isOpen, setIsOpen] = useState(args.open);
+    const handleClose = () => {
+      setIsOpen(false);
+      action("onClose")();
+    };
+
+    return <ModalRadix {...args} open={isOpen} onClose={handleClose} />;
+  },
+  args: {
+    open: true,
+    onClose: action("onClose"),
+    title: "Modal title",
+    size: "medium",
+    children: (
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur assumenda consequatur cumque ea fugiat
+        illum inventore ipsam itaque non numquam, quasi quidem quisquam, quos rerum saepe voluptate? Dolor, sit?
+      </div>
+    ),
+  },
+};
