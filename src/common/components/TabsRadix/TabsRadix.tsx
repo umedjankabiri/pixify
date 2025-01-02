@@ -1,6 +1,6 @@
 import { FC } from "react";
 import * as Tabs from "@radix-ui/react-tabs";
-import stl from "common/components/Tabs/TabsRadix.module.css";
+import stl from "common/components/TabsRadix/TabsRadix.module.css";
 
 export const TabsRadix: FC = () => {
   return (

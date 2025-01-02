@@ -4,7 +4,7 @@ import { Post } from "common/components/Post/Post.tsx";
 import { CheckboxRadix } from "common/components/CheckboxRadix/CheckboxRadix.tsx";
 import { useState } from "react";
 import { SelectRadix } from "common/components/SelectRadix/SelectRadix.tsx";
-import { TabsRadix } from "common/components/Tabs/TabsRadix";
+import { TabsRadix } from "common/components/TabsRadix/TabsRadix";
 
 function App() {
   const [checked, setChecked] = useState<boolean>(false);
