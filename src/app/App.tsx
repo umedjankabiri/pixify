@@ -6,6 +6,7 @@ import { useState } from "react";
 import { SelectRadix } from "common/components/SelectRadix/SelectRadix.tsx";
 import { TabsRadix } from "common/components/TabsRadix/TabsRadix";
 import { DropdownMenuRadix } from "common/components/DropdownRadix/DropdownMenuRadix.tsx";
+import { RadioGroupRadix } from "common/components/RadioGroupRadix/RadioGroupRadix.tsx";
 
 function App() {
   const [checked, setChecked] = useState<boolean>(false);
@@ -19,6 +20,7 @@ function App() {
       <SelectRadix value={"2"} />
       <TabsRadix />
       <DropdownMenuRadix />
+      <RadioGroupRadix />
     </>
   );
 }
