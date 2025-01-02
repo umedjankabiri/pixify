@@ -4,12 +4,15 @@
 @import "@radix-ui/colors/violet.css";
 
 :root {
-    /* Accent Colors */
-    --accent-100: #73a5ff;
-    --accent-300: #4c8dff;
-    --accent-500: #397df6;
-    --accent-700: #2f68cc;
-    --accent-900: #234e99;
+    --font-family: Roboto;
+}
+:root {
+    /* Primary Colors */
+    --primary-100: #bea6ff;
+    --primary-300: #a280ff;
+    --primary-500: #8c61ff;
+    --primary-700: #704ecc;
+    --primary-900: #382766;
 
     /* Success Colors */
     --success-100: #80ffbf;
@@ -29,20 +32,27 @@
     --warning-100: #ffd073;
     --warning-300: #e5ac39;
     --warning-500: #d99000;
-    --warning-700: #996600;
-    --warning-900: #664400;
+    --warning-700: #960;
+    --warning-900: #640;
 
     /* Dark Colors */
-    --dark-100: #4c4c4c;
-    --dark-300: #333333;
-    --dark-500: #171717;
-    --dark-700: #0d0d0d;
-    --dark-900: #000000;
+    --dark-100: #808080;
+    --dark-300: #4c4c4c;
+    --dark-500: #333;
+    --dark-700: #171717;
+    --dark-900: #000;
 
     /* Light Colors */
-    --light-100: #ffffff;
-    --light-300: #f7fbff;
-    --light-500: #edf3fa;
-    --light-700: #d5dae0;
-    --light-900: #8d9094;
+    --light-100: #fff;
+    --light-300: #f9f7ff;
+    --light-500: #f4f2fa;
+    --light-700: #dcdae0;
+    --light-900: #c3c1c7;
+
+    /* Info Colors */
+    --info-100: #73a5ff;
+    --info-300: #4c8dff;
+    --info-500: #397df6;
+    --info-700: #2f68cc;
+    --info-900: #234e99;
 }
