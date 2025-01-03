@@ -8,7 +8,7 @@ export const Typography: FC<TypographyProps> = ({
   className,
   variant = "body1",
   color = "primary",
-  align = "left",
+  align = "center",
   children,
   asChild,
   ...restProps
