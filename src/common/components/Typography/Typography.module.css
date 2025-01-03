@@ -62,6 +62,7 @@
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: var(--info-500);
+    cursor: pointer;
 }
 .typography-variant--link2 {
     font-weight: 400;
@@ -70,6 +71,7 @@
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: var(--info-500);
+    cursor: pointer;
 }
 
 .typography-color--primary {
