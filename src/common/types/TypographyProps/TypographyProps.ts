@@ -1,4 +1,4 @@
-import React, { ComponentPropsWithoutRef } from "react";
+import { ComponentPropsWithoutRef } from "react";
 
 type TypographyVariant =
   | "h1"
@@ -19,6 +19,5 @@ export type TypographyProps = {
   variant?: TypographyVariant;
   color?: TypographyColors;
   align?: TypographyAlign;
-  children?: React.ReactNode;
   asChild?: boolean;
 } & ComponentPropsWithoutRef<"div">;
