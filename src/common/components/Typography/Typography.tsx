@@ -6,7 +6,7 @@ import { Slot } from "@radix-ui/react-slot";
 
 export const Typography: FC<TypographyProps> = ({
   className,
-  variant = "Body1",
+  variant = "body1",
   color = "primary",
   align = "left",
   children,
