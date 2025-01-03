@@ -20,14 +20,6 @@ export const RadioGroupRadix = () => {
           Comfortable
         </label>
       </div>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <RadioGroup.Item className={stl.Item} value="compact" id="r3">
-          <RadioGroup.Indicator className={stl.Indicator} />
-        </RadioGroup.Item>
-        <label className={stl.Label} htmlFor="r3">
-          Compact
-        </label>
-      </div>
     </RadioGroup.Root>
   );
 };
