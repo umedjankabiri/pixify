@@ -14,6 +14,9 @@ const meta = {
     },
   },
   tags: ["autodocs"],
+  parameters: {
+    layout: "centered",
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -43,7 +46,11 @@ export const Outlined: Story = {
 export const LinkAsButton: Story = {
   args: {
     variant: "outlined",
-    children: <a href={"/sign-up"}>Sign Up</a>,
-    asChild: false,
+    children: (
+      <a href={"/sign-up"} target={"_blank"} rel="noopener noreferrer">
+        Sign Up
+      </a>
+    ),
+    asChild: true,
   },
 };
