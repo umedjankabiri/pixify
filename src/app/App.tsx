@@ -14,7 +14,7 @@ function App() {
   const [checked, setChecked] = useState<boolean>(false);
 
   return (
-    <div style={{ backgroundColor: "#8d9094" }}>
+    <div style={{ backgroundColor: "#000" }}>
       <Header />
       <Post />
       <CheckboxRadix checked={checked} setChecked={setChecked} />
@@ -39,7 +39,7 @@ function App() {
         I am using my Typography component, with error color
       </Typography>
       <Button variant={"primary"}>
-        <Typography variant={"h4"} color={"primary"} align={"center"}>
+        <Typography variant={"h4"} color={"secondary"} align={"center"}>
           I am using my Button component
         </Typography>
       </Button>
