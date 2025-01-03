@@ -10,11 +10,13 @@ export const CheckboxRadix: FC<CheckboxRadixProps> = ({ className, checked, setC
 
   return (
     <div className={stl.checkContainer}>
-      <Checkbox.Root className={clsx(stl.Root, className)} checked={checked} onCheckedChange={handleChecked}>
-        <Checkbox.Indicator className={stl.Indicator}>
-          <CheckIcon />
-        </Checkbox.Indicator>
-      </Checkbox.Root>
+      <div className={stl.circle}>
+        <Checkbox.Root className={clsx(stl.Root, className)} checked={checked} onCheckedChange={handleChecked}>
+          <Checkbox.Indicator className={stl.Indicator}>
+            <CheckIcon />
+          </Checkbox.Indicator>
+        </Checkbox.Root>
+      </div>
       <label className={stl.Label}>Accept terms and conditions.</label>
     </div>
   );
