@@ -25,37 +25,37 @@
     font-size: 16px;
     line-height: 150%;
 }
-.typography-variant--Body1 {
+.typography-variant--body1 {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
 }
-.typography-variant--Body2 {
+.typography-variant--body2 {
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
 }
-.typography-variant--Subtitle1 {
+.typography-variant--subtitle1 {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
 }
-.typography-variant--Subtitle2 {
+.typography-variant--subtitle2 {
     font-weight: 700;
     font-size: 14px;
     line-height: 171%;
 }
-.typography-variant--Caption {
+.typography-variant--caption {
     font-weight: 400;
     font-size: 12px;
     line-height: 133%;
 }
-.typography-variant--Overline {
+.typography-variant--overline {
     font-weight: 700;
     font-size: 12px;
     line-height: 133%;
 }
-.typography-variant--Link1 {
+.typography-variant--link1 {
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -63,7 +63,7 @@
     text-decoration-skip-ink: none;
     color: var(--info-500);
 }
-.typography-variant--Link2 {
+.typography-variant--link2 {
     font-weight: 400;
     font-size: 12px;
     line-height: 133%;
