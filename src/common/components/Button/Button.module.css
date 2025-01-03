@@ -11,15 +11,43 @@
 }
 
 .primary {
-    background-color: var(--accent-500);
+    background-color: var(--primary-500);
+
+    &:active {
+        background-color: var(--primary-700);
+    }
+    &:hover {
+        background-color: var(--primary-300);
+    }
+    &:focus {
+        border: 1px solid var(--info-700);
+    }
+    &:disabled {
+        background-color: var(--primary-900);
+        color: var(--light-900)
+    }
 }
 
 .secondary {
     background-color: var(--dark-300);
+
+    &:active {
+        background-color: var(--dark-500);
+    }
+    &:hover {
+        background-color: var(--dark-100);
+    }
+    &:focus {
+        border: 1px solid var(--info-700);
+    }
+    &:disabled {
+        background-color: var(--dark-300);
+        color: var(--light-900)
+    }
 }
 
 .outlined {
-    color: var(--accent-500);
-    border: 1px solid var(--accent-500);
+    color: var(--primary-500);
+    border: 1px solid var(--primary-500);
     background-color: transparent;
 }
