@@ -8,6 +8,7 @@ import { TabsRadix } from "common/components/TabsRadix/TabsRadix";
 import { DropdownMenuRadix } from "common/components/DropdownRadix/DropdownMenuRadix.tsx";
 import { RadioGroupRadix } from "common/components/RadioGroupRadix/RadioGroupRadix.tsx";
 import { Typography } from "common/components/Typography/Typography.tsx";
+import { Button } from "common/components/Button/Button.tsx";
 
 function App() {
   const [checked, setChecked] = useState<boolean>(false);
@@ -37,6 +38,26 @@ function App() {
       <Typography variant={"h1"} color={"error"} align={"center"}>
         I am using my Typography component, with error color
       </Typography>
+      <Button variant={"primary"}>
+        <Typography variant={"h4"} color={"primary"} align={"center"}>
+          I am using my Button component
+        </Typography>
+      </Button>
+      <Button variant={"secondary"}>
+        <Typography variant={"h4"} color={"secondary"} align={"center"}>
+          I am using my Button component
+        </Typography>
+      </Button>
+      <Button variant={"outlined"}>
+        <Typography variant={"h4"} color={"success"} align={"center"}>
+          I am using my Button component
+        </Typography>
+      </Button>
+      <Button variant={"primary"} disabled={true}>
+        <Typography variant={"h4"} color={"success"} align={"center"}>
+          I am using my Button component
+        </Typography>
+      </Button>
     </div>
   );
 }
