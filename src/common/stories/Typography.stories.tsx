@@ -39,7 +39,7 @@ const meta = {
   },
   tags: ["autodocs"],
   parameters: {
-    layout: "centered",
+    layout: "align",
   },
 } satisfies Meta<typeof Typography>;
 
