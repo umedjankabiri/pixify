@@ -3,31 +3,60 @@
     align-items: center;
 }
 
-.Root {
-    all: unset;
-    background-color: white;
-    width: 25px;
-    height: 25px;
-    border-radius: 4px;
+.circle {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 10px var(--black-a7);
-    &:hover {
-        background-color: var(--violet-3);
-    }
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--dark-900);
 
+    &:hover {
+        background-color: var(--dark-500);
+    }
+    &:active {
+        background-color: var(--dark-100);
+    }
     &:focus {
-        box-shadow: 0 0 0 2px black;
+        background-color: var(--dark-100);
+        outline: unset;
+    }
+}
+.Root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    all: unset;
+    background-color: var(--dark-900);
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid var(--light-900);
+
+    &:hover {
+        background-color: var(--dark-500);
+    }
+    &:active {
+        background-color: var(--dark-100);
+    }
+    &:focus {
+        background-color: var(--dark-100);
+    }
+    &[data-state="checked"] {
+        background-color: var(--light-100);
     }
 }
 
 .Indicator {
-    color: var(--violet-11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-900);
 }
 
 .Label {
-    color: #000;
+    color: var(--light-100);
     padding-left: 15px;
     font-size: 15px;
     line-height: 1;
