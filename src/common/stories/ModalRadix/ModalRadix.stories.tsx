@@ -20,6 +20,7 @@ const meta = {
     docs: {
       disable: true,
     },
+    layout: "centered",
   },
 } satisfies Meta<typeof ModalRadix>;
 
