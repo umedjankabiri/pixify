@@ -10,7 +10,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: var(--dark-900);
+    background-color: transparent;
 
     &:hover {
         background-color: var(--dark-500);
@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center;
     all: unset;
-    background-color: var(--dark-900);
+    background-color: transparent;
     width: 18px;
     height: 18px;
     border-radius: 4px;
