@@ -8,6 +8,7 @@
     margin-top: 10px;
     min-width: 100px;
     text-align: center;
+    pointer-events: auto;
 }
 
 .primary {
@@ -20,7 +21,7 @@
         background-color: var(--primary-300);
     }
     &:focus {
-        border: 1px solid var(--info-700);
+        border: 2px solid var(--info-700);
     }
     &:disabled {
         background-color: var(--primary-900);
@@ -38,7 +39,7 @@
         background-color: var(--dark-100);
     }
     &:focus {
-        border: 1px solid var(--info-700);
+        border: 2px solid var(--info-700);
     }
     &:disabled {
         background-color: var(--dark-300);
@@ -47,7 +48,21 @@
 }
 
 .outlined {
+    background-color: transparent;
     color: var(--primary-500);
     border: 1px solid var(--primary-500);
-    background-color: transparent;
+
+    &:active {
+        background-color: var(--light-300);
+    }
+    &:hover {
+        background-color: var(--light-500);
+    }
+    &:focus {
+        border: 2px solid var(--primary-700);
+    }
+    &:disabled {
+        background-color: var(--light-900);
+        color: var(--light-100)
+    }
 }
