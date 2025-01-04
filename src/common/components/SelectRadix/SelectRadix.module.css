@@ -1,39 +1,79 @@
+.selectWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 210px;
+    height: 60px;
+    gap: 10px;
+    color: var(--light-100);
+}
+
+.selectLabel {
+    font-family: var(--font-family), Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: var(--dark-100);
+    background-color: transparent;
+    &:disabled {
+        background-color: transparent;
+        color: var(--dark-300);
+    }
+}
+
 .Trigger {
     all: unset;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
-    padding: 0 15px;
-    font-size: 13px;
-    line-height: 1;
+    width: 210px;
     height: 35px;
+    padding: 0 15px;
     gap: 5px;
-    background-color: white;
-    color: var(--violet-11);
-    box-shadow: 0 2px 10px var(--black-a7);
+
+    font-family: var(--font-family), Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--light-100);
+    background-color: var(--dark-300);
+    border: 1px solid var(--dark-300);
+
+    &:active {
+        background-color: var(--dark-100);
+    }
     &:hover {
-        background-color: var(--mauve-3);
+        background-color: var(--dark-100);
     }
     &:focus {
-        box-shadow: 0 0 0 2px black;
+        background-color: var(--info-700);
+    }
+    &:disabled {
+        color: var(--dark-300);
     }
     &[data-placeholder] {
-        color: var(--violet-9);
+        background-color: var(--dark-900);
+        color: var(--light-100);
     }
 }
 
 .Icon {
-    color: Var(--violet-11);
+    color: Var(--light-100);
+
+    &:disabled {
+        color: var(--dark-300);
+    }
 }
 
 .Content {
     overflow: hidden;
-    background-color: white;
-    border-radius: 6px;
-    box-shadow:
-            0 10px 38px -10px rgba(22, 23, 24, 0.35),
-            0 10px 20px -15px rgba(22, 23, 24, 0.2);
+    width: 210px;
+    background-color: var(--dark-900);
+    border: 1px solid var(--dark-100);
+    position: absolute;
+    top: 55px;
+    left: -25px;
 }
 
 .Viewport {
@@ -41,15 +81,18 @@
 }
 
 .Label {
-    padding: 0 25px;
-    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
     line-height: 25px;
-    color: var(--mauve-11);
+    color: var(--dark-300);
 }
 
 .Separator {
     height: 1px;
-    background-color: var(--violet-6);
+    background-color: var(--dark-100);
     margin: 5px;
 }
 
@@ -58,7 +101,8 @@
     align-items: center;
     justify-content: center;
     height: 25px;
-    background-color: white;
-    color: var(--violet-11);
-    cursor: default;
+    border: solid 1px var(--dark-100);
+    background-color: var(--dark-500);
+    color: var(--light-100);
+    cursor: pointer;
 }
