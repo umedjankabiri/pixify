@@ -4,7 +4,7 @@
 @import "@radix-ui/colors/violet.css";
 
 :root {
-    --font-family: Roboto;
+    --font-family: Roboto, Arial, sans-serif;
 }
 :root {
     /* Primary Colors */
