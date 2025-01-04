@@ -1,31 +1,34 @@
 .Item {
-    font-size: 13px;
-    line-height: 1;
-    color: var(--violet-11);
-    border-radius: 3px;
     display: flex;
     align-items: center;
+    font-family: var(--font-family), Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--light-100);
+    border-radius: 3px;
     height: 25px;
     padding: 0 35px 0 25px;
     position: relative;
     user-select: none;
+
     &[data-disabled] {
-        color: var(--mauve-8);
+        color: var(--dark-300);
         pointer-events: none;
     }
     &[data-highlighted] {
         outline: none;
-        background-color: var(--violet-9);
-        color: var(--violet-1);
+        background-color: var(--primary-900);
+        color: var(--primary-300);
+        font-size: 18px;
     }
 }
 
 .ItemIndicator {
-    position: absolute;
-    left: 0;
-    width: 25px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    left: 0;
+    width: 25px;
 }
-
