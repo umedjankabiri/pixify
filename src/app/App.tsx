@@ -8,6 +8,7 @@ import { RadioGroupRadix } from "common/components/RadioGroupRadix/RadioGroupRad
 import { Typography } from "common/components/Typography/Typography.tsx";
 import { Button } from "common/components/Button/Button.tsx";
 import { DropdownMenuRadix } from "common/components/DropdownRadix/DropdownMenuRadix.tsx";
+import { TabsRadix } from "common/components/TabsRadix/TabsRadix.tsx";
 
 function App() {
   const [checked, setChecked] = useState<boolean>(false);
@@ -18,7 +19,7 @@ function App() {
       <Post />
       <CheckboxRadix checked={checked} setChecked={setChecked} />
       <SelectRadix value={"1"} />
-      {/*<TabsRadix />*/}
+      <TabsRadix />
       <DropdownMenuRadix />
       <RadioGroupRadix />
       <Typography variant={"h1"} color={"primary"} align={"center"}>
