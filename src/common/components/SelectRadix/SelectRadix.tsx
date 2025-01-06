@@ -5,17 +5,14 @@ import stl from "common/components/SelectRadix/SelectRadix.module.css";
 import { SelectItemRadix } from "common/components/SelectRadix/SelectItemRadix/SelectItemRadix.tsx";
 import { SelectRadixProps } from "common/types/SelectRadixProps/SelectRadixProps.ts";
 import { clsx } from "clsx";
-import { Typography } from "common/components/Typography/Typography.tsx";
 
-export const SelectRadix: FC<SelectRadixProps> = ({ className }) => {
+export const SelectRadix: FC<SelectRadixProps> = ({ className, disabled }) => {
   return (
     <div className={stl.selectWrapper}>
-      <label htmlFor="select" className={stl.selectLabel}>
-        <Typography variant={"body2"} color={"secondary"}>
-          some text
-        </Typography>
+      <label htmlFor="select" className={stl.selectLabel} aria-disabled={disabled}>
+        some text
       </label>
-      <Select.Root>
+      <Select.Root disabled={disabled}>
         <Select.Trigger className={clsx(stl.Trigger, className)} aria-label="Food">
           <Select.Value placeholder="Select a fruit…" />
           <Select.Icon className={stl.Icon}>
