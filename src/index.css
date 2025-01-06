@@ -56,3 +56,10 @@
     --info-700: #2f68cc;
     --info-900: #234e99;
 }
+
+html, body {
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
