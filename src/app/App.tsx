@@ -4,23 +4,21 @@ import { Post } from "common/components/Post/Post.tsx";
 import { CheckboxRadix } from "common/components/CheckboxRadix/CheckboxRadix.tsx";
 import { useState } from "react";
 import { SelectRadix } from "common/components/SelectRadix/SelectRadix.tsx";
-import { TabsRadix } from "common/components/TabsRadix/TabsRadix";
-import { DropdownMenuRadix } from "common/components/DropdownRadix/DropdownMenuRadix.tsx";
 import { RadioGroupRadix } from "common/components/RadioGroupRadix/RadioGroupRadix.tsx";
 import { Typography } from "common/components/Typography/Typography.tsx";
 import { Button } from "common/components/Button/Button.tsx";
+import { DropdownMenuRadix } from "common/components/DropdownRadix/DropdownMenuRadix.tsx";
 
 function App() {
   const [checked, setChecked] = useState<boolean>(false);
 
   return (
-    <div style={{ backgroundColor: "#000" }}>
+    <div className={"appContainer"}>
       <Header />
       <Post />
       <CheckboxRadix checked={checked} setChecked={setChecked} />
       <SelectRadix value={"1"} />
-      <SelectRadix value={"2"} />
-      <TabsRadix />
+      {/*<TabsRadix />*/}
       <DropdownMenuRadix />
       <RadioGroupRadix />
       <Typography variant={"h1"} color={"primary"} align={"center"}>
