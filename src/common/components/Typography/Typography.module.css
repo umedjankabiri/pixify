@@ -3,7 +3,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
-    color: var(--dark-900);
+    color: var(--light-100);
 }
 .typography-variant--h1 {
     font-weight: 700;
@@ -75,10 +75,10 @@
 }
 
 .typography-color--primary {
-    color: var(--dark-900);
+    color: var(--light-100);
 }
 .typography-color--secondary {
-    color:  var(--light-100);
+    color:  var(--dark-900);
 }
 .typography-color--success {
     color:  var(--success-500);
